@@ -10,9 +10,9 @@ This repository showcases my growing mastery of Terraform through organised, fun
 
 Each folder contains Terraform configuration files, named to reflect their focus—making navigation intuitive:
 
-- **`/networking/`** – Includes modules for setting up VPCs, subnets, and security groups  
-- **`/compute/`** – Hosts configuration for virtual machines, instances, load balancers  
-- **`/storage/`** – Manages buckets, volumes, and storage infrastructure  
+- **`/for_each/`** ,**`/Count/`** – Includes modules for setting up VPCs, subnets, and security groups  
+- **`/Instance/`** – Hosts configuration for virtual machines, instances, load balancers  
+- **`/Remote-backend/`** – Manages buckets, volumes, and storage infrastructure  
 
 ---
 
