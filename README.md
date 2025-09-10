@@ -1,35 +1,43 @@
 # 🧐 Terraform Repository 🚀
 
-Welcome to my Terraform practice playground — where I nurture my hands-on skills with Infrastructure as Code (IaC).
+Welcome to my Terraform practice playground — where I nurture my hands-on skills with **Infrastructure as Code (IaC)**.  
 
-This repository showcases my growing mastery of Terraform through organised, functional examples.
-
----
-
-##  Directory Structure
-
-Each folder contains Terraform configuration files, named to reflect their focus—making navigation intuitive:
-
-- **`for-each/`** ,**`Count/`** – Includes modules for setting up VPCs and security groups and uses Dynamic Blocks (Meta Arguments)
-- **`Instance/`** – Hosts configuration for Ec2 Instance
-- **`Remote-backend/`** – Manages terraform.tfstate file and state using S3 bucket and DynamoDB LockID
+This repository showcases my growing mastery of Terraform through organized, functional examples.  
 
 ---
 
-##  Purpose & Goals
+## 📂 Directory Structure
 
-I curiously built this repository to:
+Each folder contains Terraform configuration files, named to reflect their focus — making navigation intuitive:
 
-- **Strengthen** my real-world Terraform capabilities  
-- **Document** reusable patterns that mirror how industry projects are structured  
-- **Share** my learning journey with others exploring Terraform’s power  
+- **`for-each/`, `count/`** – Demonstrates meta-arguments like `for_each`, `count`, and the use of dynamic blocks (e.g., VPCs and Security Groups)  
+- **`instance/`** – Configuration for EC2 instances  
+- **`remote-backend/`** – Manages `terraform.tfstate` with remote state storage using **S3 bucket** and **DynamoDB (LockID)**  
 
 ---
 
-##  Tools & Technologies
+## 🎯 Purpose & Goals
 
-- **Terraform**: Core IaC tool for provisioning and managing infrastructure  
-- **Cloud Providers**: AWS
-- **Infrastucre**: Kubernetes, AWS cloud 
-- **State Management**: Local and optionally remote backends (e.g., S3 + DynamoDB for AWS)
-- **Additional** : CI/CD with Devops tools using Terraform
+I built this repository to:  
+- Strengthen my **real-world Terraform capabilities**  
+- Document **reusable patterns** that reflect industry best practices  
+- Share my **learning journey** with others exploring Terraform’s power  
+
+---
+
+## ⚙️ Tools & Technologies
+
+- **Terraform** → Core IaC tool for provisioning and managing infrastructure  
+- **Cloud Provider** → AWS  
+- **Infrastructure** → Kubernetes, AWS Cloud  
+- **State Management** → Local and Remote (S3 + DynamoDB for AWS)  
+- **Additional** → CI/CD pipelines with DevOps tools, integrated using Terraform  
+
+---
+
+## 🚀 How to Get Started
+
+1. Clone the repository:  
+   ```bash
+   git clone https://github.com/AdityaGaikwad6430/Terraform.git
+   cd Terraform
