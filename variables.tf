@@ -1,3 +1,0 @@
-variable "ami" {
-   default =  ami
-}
