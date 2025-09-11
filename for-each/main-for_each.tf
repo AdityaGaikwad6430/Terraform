@@ -42,8 +42,8 @@ resource "aws_security_group" "automate-sg" {
 #AWS instance
 resource "aws_instance" "my_instance" {
     for_each = tomap(
-      {"terra-test" = "t2.micro"},
-      {"terraform2"= "t2.micro"}
+      {"terra-test" = "t2.micro",
+      "terraform2"= "t2.micro"}
     )
     key_name = aws_key_pair.ets.key_name
     security_groups = [aws_security_group.automate-sg.name]
@@ -57,4 +57,5 @@ resource "aws_instance" "my_instance" {
       name= each.key
     }
     
+
 }
