@@ -7,3 +7,7 @@ variable "env" {
    default= "prd"
    type = "string"
 }
+variable "ec2_default_root_storage_size" {
+  default = "20"
+  type = number
+}
