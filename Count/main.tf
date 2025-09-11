@@ -12,7 +12,10 @@ resource "aws_default_vpc" "name" {
 resource "aws_security_group" "automate-sg" {
  #Inbound rules
   name = "automate-sg"
-  tags = "${var.env}-automate-sg"
+  tags =  {
+    name= "${var.env}-automate-sg"
+    Environment= var.env
+
   vpc_id = aws_default_vpc.id
   ingress = {
     from_port= 22
@@ -61,4 +64,5 @@ resource "aws_instance" "my_instance" {
    name= "Terraform basic"
     environment= var.env
   }
+
 }
