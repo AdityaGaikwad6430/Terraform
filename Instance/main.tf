@@ -41,19 +41,16 @@ resource "aws_security_group" "automate-sg" {
 
 #AWS instance
 resource "aws_instance" "my_instance" {
-    key_name = aws_key_pair.ets.key_name
-    security_groups = [aws_security_group.automate-sg.name]
-    ami = vars.ami
-    instance_type = "t2.micro"
-    root_block_device {
-      volume_size = var.env == "prd" ? 20 : var.ec2_default_root_storage_size
-      volume_type = "gp3"
-    }
-    tags = {
-      name= "Terraform basic"
-      environment= var.env
-    }
-    
-
+  key_name = aws_key_pair.ets.key_name
+  security_groups = [aws_security_group.automate-sg.name]
+  ami = vars.ami
+  instance_type = "t2.micro"
+  root_block_device {
+   volume_size = var.env == "prd" ? 20 : var.ec2_default_root_storage_size
+   volume_type = "gp3"
+  }
+  tags = {
+   name= "Terraform basic"
+    environment= var.env
+  }
 }
-
