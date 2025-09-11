@@ -62,7 +62,8 @@ resource "aws_instance" "my_instance" {
   }
   tags = {
    name= "Terraform basic"
-    environment= var.env
+   Environment= var.env
   }
 
 }
+
