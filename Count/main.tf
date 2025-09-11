@@ -39,13 +39,6 @@ resource "aws_security_group" "automate-sg" {
     protocol         = "-1"
     cidr_blocks      = ["0.0.0.0/0"]
   }
-  # Outbound rules
- egress {
-   from_port        = 0
-   to_port          = 0
-    protocol         = "-1"
-    cidr_blocks      = ["0.0.0.0/0"]
-  }
   
 }
 
@@ -66,4 +59,5 @@ resource "aws_instance" "my_instance" {
   }
 
 }
+
 
