@@ -12,7 +12,8 @@ Each folder contains Terraform configuration files, named to reflect their focus
 
 - **`for-each/`, `count/`** – Demonstrates meta-arguments like `for_each`, `count`, and the use of dynamic blocks (e.g., VPCs and Security Groups)  
 - **`instance/`** – Configuration for EC2 instances  
-- **`remote-backend/`** – Manages `terraform.tfstate` with remote state storage using **S3 bucket** and **DynamoDB (LockID)**  
+- **`remote-backend/`** – Manages `terraform.tfstate` with remote state storage using **S3 bucket** and **DynamoDB (LockID)**
+- **`Template/`**  - A module to Provision an Ec2 instance
 
 ---
 
